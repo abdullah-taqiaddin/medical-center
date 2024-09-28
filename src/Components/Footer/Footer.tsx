@@ -1,4 +1,3 @@
-import Icn from "../../Assets/icons/Logo.png";
 import "./Footer.css"; // Add this to import the CSS file
 import { Link } from "react-router-dom";
 import facebookIcn from "../../Assets/icons/facebook-icn.svg";

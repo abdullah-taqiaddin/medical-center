@@ -9,8 +9,6 @@ import { ReactComponent as BtnIcnGreen } from "../../Assets/icons/button-icn-gre
 import drimage from "../../Assets/images/drimage.png";
 import drimageplaceholder from "../../Assets/images/placeholderdrimage.png";
 
-import { useRef } from "react";
-import type { Swiper as SwiperType } from "swiper";
 
 import formimg1 from "../../Assets/images/formimg1.png";
 import formimg2 from "../../Assets/images/formimage2.png";
@@ -21,7 +19,6 @@ import {
   Button,
   FormControl,
   FormLabel,
-  Grid,
   GridItem,
   Heading,
   Input,
@@ -51,8 +48,6 @@ const DrCard = ({
 };
 
 const BookAppointment = () => {
-  const swiperRef = useRef<SwiperType | null>(null);
-
   return (
     <div className="homepage">
       <Header />

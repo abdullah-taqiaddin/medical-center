@@ -6,10 +6,7 @@ import Footer from "../../Components/Footer/Footer";
 import { ReactComponent as BtnIcnBlue } from "../../Assets/icons/button-icn-blue.svg";
 import { ReactComponent as BtnIcnGreen } from "../../Assets/icons/button-icn-green.svg";
 
-import drimageplaceholder from "../../Assets/images/placeholderdrimage.png";
 
-import { useRef } from "react";
-import type { Swiper as SwiperType } from "swiper";
 
 
 import {
@@ -17,39 +14,14 @@ import {
   Button,
   FormControl,
   FormLabel,
-  Grid,
-  GridItem,
   Heading,
   Input,
-  Textarea,
   Text,
   ChakraProvider,
   Checkbox,
 } from "@chakra-ui/react";
 
-const DrCard = ({
-  imagePath,
-  name,
-  major,
-}: {
-  imagePath?: string;
-  name?: string;
-  major?: string;
-}) => {
-  return (
-    <div className="dr-card-pat">
-      <div>
-        <img src={imagePath ? imagePath : drimageplaceholder} alt="drdr"></img>
-      </div>
-      <div className="dr-card-name-pat">{name || "Doctor Name"}</div>
-      <div className="dr-card-major-pat">{major || "Specialty/Major"}</div>
-    </div>
-  );
-};
-
 const PatientRegistration = () => {
-  const swiperRef = useRef<SwiperType | null>(null);
-
   return (
     <div className="homepage">
       <Header />
