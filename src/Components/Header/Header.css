@@ -1,0 +1,121 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 32px 80px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    /* Opacity for transparency */
+    border-bottom: 1px solid rgb(206, 206, 206);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    justify-content: space-between
+        /* Adds a background blur */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 63px;
+}
+
+.nav-links ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links span {
+    margin-left: 5px;
+}
+
+/* Hide the hamburger icon on larger screens */
+.hamburger {
+    display: none;
+}
+
+.hidden-div {
+    width: 50px;
+}
+
+/* Show the hamburger icon and hide nav-links on smaller screens */
+@media (max-width: 752px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hidden-div {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.drawer-nav {
+
+    list-style-type: none;
+}
+
+.drawer-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.drawer-nav li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    /* Adds a bottom border to each list item */
+}
+
+.drawer-nav li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Arrow rotation animation */
+/* Arrow rotation animation */
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+    /* Add some space between the text and arrow */
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/* Dropdown hover effect */
+.dropdown-item {
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+}
+
+.dropdown-item:hover {
+    transform: translateX(10px);
+    /* Move the item to the right by 10px */
+}
+
+@media screen and (max-width: 550px) {
+    .logo img {
+        height: 30px;
+    }
+}

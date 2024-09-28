@@ -1,0 +1,852 @@
+/* Main Content Styles */
+.main-content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 113px;
+}
+
+.hero-feature-card-sndpage {
+    width: 150px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 0px rgba(84, 84, 84, 0.1);
+}
+
+/* DrCard Styles */
+.dr-card-book {
+    /* Add any existing styles for dr-card here */
+}
+
+.dr-card-name-book {
+    color: #292929;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.dr-card-major-book {
+    color: #606060;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ServicesCard Styles */
+.services-card {
+    background: white;
+    width: 22.2rem;
+    height: 450px;
+    border-radius: 20px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-height: max-content;
+}
+
+.services-card-image {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.services-card-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.services-card-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: left;
+}
+
+.services-card-subtitle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+/* Image Grid Section Styles */
+.image-grid-section-container {
+    padding: 200px 80px 80px;
+    padding-top: unset;
+    padding-bottom: unset;
+}
+
+.image-section-container {
+    display: flex;
+}
+
+.image-grid {
+    min-width: 50%;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    max-height: 600px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.center-image {
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.image-section-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+.about-us-heading {
+    color: rgba(4, 183, 148, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.welcome-to-center-text {
+    color: #292929;
+    font-family: 'Oswald';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    max-width: 70%;
+}
+
+.about-us-description {
+    color: #606060;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap */
+    justify-content: space-between;
+    gap: 1.5rem;
+    /* Space between items */
+    max-width: 900px;
+    /* Optional: control width of the container */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    /* Adjust width of items to fit two in a row */
+}
+
+.checkmark-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.75rem;
+    /* Space between icon and text */
+}
+
+.feature-item span {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.about-us-button {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: unset;
+    background: rgba(41, 41, 41, 1);
+    border-radius: 50px;
+    color: white;
+    width: 184px;
+    font-size: 16px;
+}
+
+/* Services Section Styles */
+.services-section {
+    background: #E7F1FF;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-heading {
+    width: 40%;
+}
+
+.services-subtitle {
+    color: #04B794;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+
+.services-title {
+    color: #292929;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    margin-bottom: 2rem;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Team Section Styles */
+.team-section-book {
+    padding: 80px;
+    padding-top: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-heading-book {
+    width: 40%;
+}
+
+.team-subtitle-book {
+    color: #04B794;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+
+.team-title-book {
+    color: #292929;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    margin-bottom: 2rem;
+}
+
+.team-list-book {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    width: 100%;
+    gap: 3rem;
+    margin-right: -159px;
+    margin-top: 2rem;
+}
+
+/* CTA Section Styles */
+.cta-section {
+    background-color: #2ec5a0;
+    /* Main background color of the section */
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    max-height: 15rem;
+    margin: 80px;
+    position: relative;
+    top: 150px;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.cta-text {
+    text-align: left;
+    color: #fff;
+    max-width: 600px;
+}
+
+.cta-subheading {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cta-heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: unset;
+    margin-bottom: 1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #2ec5a0;
+}
+
+.cta-image {
+    max-width: 400px;
+}
+
+.cta-image-img {
+    max-width: 100%;
+    border-radius: 20px;
+    position: relative;
+    top: -80px;
+}
+
+.buttons-container {}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1150px) {
+
+    .services-heading {
+        width: 100%;
+    }
+
+    .team-heading {
+        width: 100%;
+    }
+
+    .welcome-to-center-text {
+        max-width: unset;
+    }
+
+    .image-section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid {
+        max-height: unset;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .image-section-text {
+        margin-top: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features-list {
+        justify-content: center;
+    }
+
+    .about-us-button {
+        align-self: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .feature-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-grid-section-container {
+        padding: 50px 20px;
+    }
+
+    .image-grid {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-section-text {
+        text-align: center;
+    }
+
+    .feature-item {
+        width: 100%;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .cta-image {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .image-grid-section-container {
+        padding: 30px 15px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-item span {
+        font-size: 14px;
+    }
+
+    .cta-heading {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .image-grid-section-container {
+        padding: 30px 15px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-item span {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .project-section-sub {
+        flex-direction: column;
+    }
+
+    .project-left {
+        width: 100%;
+    }
+
+    .project-title {
+        width: 100%;
+    }
+
+    .project-right {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero-section .sched-btn {
+        font-size: 11px !important;
+    }
+
+    .hero-section .sched-btn span {
+        width: 21%;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-image {
+        margin-top: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-title {
+        font-size: 50px !important;
+    }
+
+    .hero-title {
+        line-height: 50px !important;
+    }
+
+    .project-title {
+        font-size: 35px;
+    }
+
+    .service-title {
+        font-size: 43px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .hero-title {
+        font-size: 30px !important;
+    }
+
+    .project-title {
+        font-size: 25px;
+    }
+
+    .hero-description {
+        font-size: 13px !important;
+        line-height: unset;
+    }
+
+    .service-title {
+        font-size: 33px;
+    }
+
+    .hero-section .sched-btn {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero-image {
+        margin-top: unset;
+        margin-right: unset;
+        width: 100%;
+    }
+
+    .text-overlay-description {
+        display: none;
+    }
+
+    .text-overlay-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .text-overlay-title {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .hero-feature-card-1 {
+        top: unset;
+        left: unset;
+        right: unset;
+    }
+
+    .hero-feature-card-2 {
+        top: unset;
+        left: unset;
+        right: unset;
+    }
+
+    .hero-section {
+        padding: 20px;
+        padding-top: 80px;
+    }
+
+    .hero-left-text {
+        position: unset;
+        width: 80%;
+    }
+
+    .hero-title {
+        line-height: 109px;
+        width: 100%;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+    .hero-section {
+        background-image: unset;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+
+    .cta-content {
+        position: unset;
+
+    }
+
+    .cta-section {
+        top: unset;
+        max-height: fit-content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+
+    .cta-buttons {
+        flex-direction: column;
+
+    }
+
+    .cta-content {
+        gap: unset;
+    }
+}
+
+/* Wrapper to hold both arches and content */
+.background {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* Adjust as necessary */
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Left arch with gradient */
+.left-arch {
+    position: absolute;
+    left: -39%;
+    top: 0;
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(circle, rgba(4, 183, 148, 0.3) 46%, rgba(4, 183, 148, 0.001) 71%);
+
+    border-radius: 100%;
+    transform: rotate(15deg);
+    /* Adjust the angle to create the arch effect */
+    z-index: 1;
+    /* Ensure the arch stays behind the content */
+}
+
+/* Right arch with gradient */
+.right-arch {
+    position: absolute;
+    right: -39%;
+    top: 0;
+    width: 1000px;
+    height: 1000px;
+    background: radial-gradient(circle, rgba(30, 168, 209, 0.3) 46%, rgba(4, 183, 148, 0.001) 71%);
+
+    border-radius: 100%;
+    transform: rotate(15deg);
+    /* Adjust the angle to create the arch effect */
+    z-index: 1;
+    /* Ensure the arch stays behind the content */
+}
+
+/* Content area */
+.content {
+    position: relative;
+    z-index: 2;
+    /* Higher than the arches to make sure it's on top */
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+        /* Adjust for proper spacing */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    /* Adjust color as needed */
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    /* Adjust color as needed */
+}
+
+/* Team Section Styles */
+.team-section {
+    padding: 80px;
+    padding-top: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -150px;
+}
+
+.team-heading {
+    width: 40%;
+}
+
+.team-subtitle {
+    color: #04B794;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+
+.team-title {
+    color: #292929;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    margin-bottom: 2rem;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    width: 100%;
+    gap: 3rem;
+    margin-right: -159px;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 810px) {
+
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .background {
+        height: 100%;
+    }
+}
+
+.form-container {
+    display: flex;
+    flex-Direction: row;
+    width: 100%;
+    gap: 2rem;
+    justify-Content: center;
+}
+
+@media screen and (max-width: 1250px) {
+
+
+
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+
+
+    .team-heading-book {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 577px) {
+
+
+
+    .team-list {
+        margin-right: unset;
+    }
+}
