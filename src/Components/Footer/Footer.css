@@ -24,7 +24,7 @@ footer {
     /* Prevents repeating of the image */
     background-position: left center;
     /* Positions image on the left, vertically centered */
-    background-size: contain;
+    background-size: auto;
     /* Adjust the image size */
     color: #ffffff;
     display: flex;

@@ -15,9 +15,11 @@ const Footer = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>Services</li>
             <li>
-              <Link to="/">Gallery</Link>
+              <Link to="/">Services</Link>
+            </li>
+            <li>
+              <Link to="/PatientRegistration">New Patient Form</Link>
             </li>
             <li>
               <Link to="/">Contact Us</Link>
@@ -81,10 +83,22 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div style={{ display: "flex", flexDirection: "row", gap: "0.5rem" }}>
-          <img alt="social" src={facebookIcn}></img>
-          <img alt="social" src={xIcn}></img>
-          <img alt="social" src={instagramIcn}></img>
-          <img alt="social" src={linkdinIcn}></img>
+          <img
+            alt="social"
+            style={{ cursor: "pointer" }}
+            src={facebookIcn}
+          ></img>
+          <img alt="social" style={{ cursor: "pointer" }} src={xIcn}></img>
+          <img
+            alt="social"
+            style={{ cursor: "pointer" }}
+            src={instagramIcn}
+          ></img>
+          <img
+            alt="social"
+            style={{ cursor: "pointer" }}
+            src={linkdinIcn}
+          ></img>
         </div>
         <p>© 2024 Stonebrook Medical Center. All Rights Reserved.</p>
       </div>

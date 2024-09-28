@@ -453,6 +453,9 @@
         padding: 30px 15px;
     }
 
+                .team-list-book {
+                    margin-right: unset !important;
+                }
     .image {
         width: 100%;
         height: auto;

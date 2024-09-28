@@ -60,12 +60,15 @@ const Header = () => {
                     <li>
                       <Link to="/">Home</Link>
                     </li>
-                    <li style={{ cursor: "pointer" }}>Services</li>
+                    <li style={{ cursor: "pointer" }}>
+                      {" "}
+                      <Link to="/">Services</Link>
+                    </li>
                     <li>
                       <Link to="/PatientRegistration">New Patient Form</Link>
                     </li>
                     <li>
-                      <Link to="/contanctus">Contact Us</Link>
+                      <Link to="/">Contact Us</Link>
                     </li>
                   </ul>
                 </nav>
@@ -111,7 +114,7 @@ const Header = () => {
               <Link to="/PatientRegistration">New Patient Form</Link>
             </li>
             <li>
-              <Link to="/contanctus">Contact Us</Link>
+              <Link to="/">Contact Us</Link>
             </li>
             <Link to={"/BookAppointment"}>
               <Button
