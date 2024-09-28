@@ -6,15 +6,11 @@ import Footer from "../../Components/Footer/Footer";
 import { ReactComponent as BtnIcnBlue } from "../../Assets/icons/button-icn-blue.svg";
 import { ReactComponent as BtnIcnGreen } from "../../Assets/icons/button-icn-green.svg";
 
-import drimage from "../../Assets/images/drimage.png";
 import drimageplaceholder from "../../Assets/images/placeholderdrimage.png";
 
 import { useRef } from "react";
 import type { Swiper as SwiperType } from "swiper";
 
-import formimg1 from "../../Assets/images/formimg1.png";
-import formimg2 from "../../Assets/images/formimage2.png";
-import formimg3 from "../../Assets/images/formimage3.png";
 
 import {
   Box,

@@ -24,19 +24,6 @@ import drimageplaceholder from "../../Assets/images/placeholderdrimage.png";
 
 import drctaimage from "../../Assets/images/drctaiamge.png";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import { Navigation, Scrollbar } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-// Icons (You can use Chakra UI icons or react-icons)
-import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
-import type { Swiper as SwiperCore } from "swiper";
-
-import { useRef } from "react";
-import type { Swiper as SwiperType } from "swiper";
 import { Link } from "react-router-dom";
 import { Button } from "@chakra-ui/react";
 
@@ -83,8 +70,6 @@ const ServicesCard = ({
 };
 
 const Homepage = () => {
-  const swiperRef = useRef<SwiperType | null>(null);
-
   return (
     <div className="homepage">
       <Header />
