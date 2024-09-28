@@ -8,6 +8,8 @@ import {
   DrawerBody,
   useDisclosure,
   Button,
+  ChakraProvider,
+  DrawerFooter,
 } from "@chakra-ui/react";
 import Icn from "../../Assets/icons/Logo.png";
 import "./Header.css";
@@ -26,7 +28,7 @@ const Header = () => {
         dropdownRef.current &&
         !dropdownRef.current.contains(event.target as Node)
       ) {
-        setDropdownOpen(false); // Close dropdown if clicked outside
+        setDropdownOpen(false);
       }
     };
 
@@ -44,34 +46,48 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
-          <DrawerOverlay />
-          <DrawerContent style={{ background: "white", zIndex: 10000 }}>
-            <DrawerCloseButton style={{ background: "#c4a24d" }} />
-            <DrawerHeader>
+        <ChakraProvider resetCSS={false}>
+          <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+            <DrawerOverlay />
+
+            <DrawerContent style={{ background: "white", zIndex: 10000 }}>
+              {/* <DrawerHeader>
               <div className="logo">
                 <img src={Icn} alt="Logo" style={{ height: "63px" }} />
               </div>
-            </DrawerHeader>
-            <DrawerBody>
-              <nav>
-                <ul className="drawer-nav">
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li style={{ cursor: "pointer" }}>Services</li>
-                  <li>
-                    <Link to="/PatientRegistration">New Patient Form</Link>
-                  </li>
-                  <li>
-                    <Link to="/contanctus">Contact Us</Link>
-                  </li>
-                </ul>
-              </nav>
-            </DrawerBody>
-          </DrawerContent>
-        </Drawer>
-
+            </DrawerHeader> */}
+              <DrawerBody>
+                <nav>
+                  <ul className="drawer-nav" style={{ paddingLeft: "unset" }}>
+                    <li>
+                      <Link to="/">Home</Link>
+                    </li>
+                    <li style={{ cursor: "pointer" }}>Services</li>
+                    <li>
+                      <Link to="/PatientRegistration">New Patient Form</Link>
+                    </li>
+                    <li>
+                      <Link to="/contanctus">Contact Us</Link>
+                    </li>
+                  </ul>
+                </nav>
+              </DrawerBody>
+              <DrawerFooter>
+                <Button
+                  onClick={() => onClose()}
+                  style={{
+                    background: "#8bccf2",
+                    width: "10% !important",
+                    border: "none",
+                    margin: "1rem",
+                  }}
+                >
+                  Close
+                </Button>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+        </ChakraProvider>
         <div className="logo">
           <Link to="/" style={{ color: "#333", textDecoration: "none" }}>
             <img src={Icn} alt="logo" />

@@ -77,14 +77,7 @@ const BookAppointment = () => {
                 <BtnIcnBlue />
               </div>
             </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                maxWidth: "41%",
-                gap: "1rem",
-              }}
-            >
+            <div className="title-container-sub-pat">
               <div
                 style={{
                   color: "#292929",
@@ -331,29 +324,15 @@ const BookAppointment = () => {
               </GridItem>
 
               {/* Right side placeholder */}
-              <GridItem>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "1rem",
-                  }}
-                >
-                  <div style={{ width: "100%" }}>
-                    <img alt="form-stock" src={formimg1} />
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      gap: "1rem",
-                    }}
-                  >
-                    <img alt="form-stock" src={formimg2} />
-                    <img alt="form-stock" src={formimg3} />
-                  </div>
+
+              <div className="form-images-container">
+                <img alt="form-stock" src={formimg1} />
+
+                <div className="form-image-row">
+                  <img alt="form-stock" src={formimg2} />
+                  <img alt="form-stock" src={formimg3} />
                 </div>
-              </GridItem>
+              </div>
             </div>
           </ChakraProvider>
         </section>
