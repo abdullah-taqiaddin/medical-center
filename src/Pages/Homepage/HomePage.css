@@ -789,3 +789,16 @@
         margin-right: unset !important;
     }
 }
+@media screen and (max-width: 450px) {
+
+    .team-section {
+        padding: 0px 40px 80px !important
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .cta-section {
+        margin: 40px !important;
+    }
+}
